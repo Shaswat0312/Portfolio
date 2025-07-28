@@ -4,8 +4,24 @@ import { useEffect, useState } from "react";
 const CursorTracker = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsDisabled(window.innerWidth < 768); 
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isDisabled) return;
+
     const updateMousePosition = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
@@ -22,12 +38,12 @@ const CursorTracker = () => {
       window.removeEventListener("mouseenter", handleMouseEnter);
       window.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [isDisabled]);
+
+  if (isDisabled) return null;
 
   return (
-    <div
-      className="fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]"
-    >
+    <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]">
       {isVisible && (
         <div
           className="w-1.5 h-1.5 rounded-full bg-red-600 backdrop-blur-[2px] shadow-[0_0_15px_rgba(255,215,0,0.5)]"
@@ -40,6 +56,6 @@ const CursorTracker = () => {
       )}
     </div>
   );
-}
+};
 
-export default CursorTracker
+export default CursorTracker;

@@ -41,11 +41,10 @@ const Education = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl font-serif italic font-semibold mt-10 text-center text-yellow-300/90 tracking-wide uppercase"
+          className="text-4xl font-serif italic font-semibold mt-10 mb-16 text-center text-yellow-300/90 tracking-wide uppercase"
           >
           Education
         </motion.h2>
-        <div className="w-32 h-1 bg-yellow-300/90 rounded mb-16 ml-113 mx-auto" />
 
      
         <motion.div

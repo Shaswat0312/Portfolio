@@ -62,11 +62,10 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-4xl font-semibold font-serif italic text-center text-yellow-300/90  mt-5"
+        className="text-4xl font-semibold font-serif italic text-center text-yellow-300/90  mt-5 mb-5"
       >
         SKILLS
       </motion.h2>
-       <div className="w-20 h-1 bg-yellow-300/90 rounded mb-16 ml-152"></div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill, i) => {
