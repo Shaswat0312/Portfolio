@@ -17,11 +17,12 @@ const Navbar = () => {
 
   const handleNavClick = (href) => {
   setIsOpen(false);
-
-  const el = document.querySelector(href);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  setTimeout(() => {
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 10); 
 };
 
 
