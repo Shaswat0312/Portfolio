@@ -1,20 +1,19 @@
 const Sidebar = () => {
   return (
     <>
-      <aside className="hidden sm:flex fixed left-0 ml-6 top-1/2 -translate-y-1/2 h-[560px] w-20 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/20 
-        shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex-col items-center justify-between py-8 z-[100]">
-       
-        <div className="text-white text-2xl font-bold h-10 w-10 mb-7 -mt-5"><img src="./Logo.jpg" alt="" /></div>
+      <aside className="hidden sm:flex fixed left-0 ml-6 top-1/2 -translate-y-1/2 h-[560px] w-20 rounded-3xl  bg-neutral-900/50 dark:bg-white/5 backdrop-blur-lg border border-neutral-500/30 dark:border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex-col items-center justify-between py-8 z-[100]">
+        <div className="text-white text-2xl font-bold h-10 w-10 mb-7 -mt-5">
+          <img src="./Logo.jpg" alt="Logo" />
+        </div>
 
         <div className="flex flex-col gap-6 text-white text-xl items-center">
           <SidebarIcons />
         </div>
 
-        <div className="text-white text-sm mt-8">© SMISHO</div>
+        <div className="text-white font-bold text-sm mt-8">© SMISHO</div>
       </aside>
 
-      <div className="sm:hidden fixed bottom-0 left-0 right-0 bg-white/10 backdrop-blur-lg border-t border-white/20 
-      flex justify-around items-center py-3 px-4 z-[100] shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
+      <div className="sm:hidden fixed -bottom-0.5 left-0 right-0  bg-neutral-900/50 dark:bg-white/10 backdrop-blur-lg  border-t border-neutral-500/30 dark:border-white/20 flex justify-around items-center py-3 px-4 z-[100] shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
         <SidebarIcons isMobile />
       </div>
     </>
@@ -48,4 +47,4 @@ function SidebarIcons({ isMobile }) {
   );
 }
 
-export default Sidebar
+export default Sidebar;

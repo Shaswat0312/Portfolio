@@ -56,55 +56,61 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="py-24 px-6 text-white scroll-mt-24">
+    <section id="skills" className="py-24 px-6 text-gray-900 dark:text-white scroll-mt-24">
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-4xl font-semibold font-serif italic text-center text-yellow-300/90  mt-5 mb-5"
-      >
+        className="text-4xl font-semibold font-serif italic text-center text-blue-600 dark:text-yellow-300 mt-5 mb-5">
         SKILLS
       </motion.h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill, i) => {
-      const row = Math.floor(i / columns);
-      const col = i % columns;
-      const isActive = activeCell.row === row && activeCell.col === col;
-          const isNear = activeCell.row === row && (activeCell.col === col - 1 || activeCell.col === col + 1);
+          const row = Math.floor(i / columns);
+          const col = i % columns;
+          const isActive = activeCell.row === row && activeCell.col === col;
+          const isNear =
+            activeCell.row === row &&
+            (activeCell.col === col - 1 || activeCell.col === col + 1);
 
-      let baseStyle = "bg-white/5";
-      let extraStyle = ""
-      if (isActive) {
-        baseStyle = "bg-[#ffb347]";
-        extraStyle = "shadow-[0_0_20px_#00f7ff] shadow-md border border-[#00f7ff]/40";
-      } else if (isNear) {
-        baseStyle = "bg-[#ffb347]/50";
-        extraStyle = "shadow-[0_0_10px_#00f7ff88] border border-[#00f7ff]/20";
-      }
+          let baseStyle = "bg-gray-200/90 dark:bg-white/5";
+          let extraStyle = "";
+          if (isActive) {
+            baseStyle = "bg-orange-300 dark:bg-[#ffb347]";
+            extraStyle =
+              "shadow-[0_0_20px_#00f7ff] shadow-md border border-[#00f7ff]/40";
+          } else if (isNear) {
+            baseStyle = "bg-orange-200/70 dark:bg-[#ffb347]/50";
+            extraStyle =
+              "shadow-[0_0_10px_#00f7ff88] border border-[#00f7ff]/20";
+          }
 
           return (
-  <motion.div
-      key={i}
-      initial={{ opacity: 0, scale: 0.7 }}
-      animate={animatedItems[i] ? { opacity: 1, scale: 1 } : undefined}
-      whileInView={{ opacity: 1, scale: 1 }}
-      onViewportEnter={() =>
-        setAnimatedItems((prev) => ({...prev,[i]: true,}))
-      }
-      transition={{ type: "spring", stiffness: 80, damping: 15 }}
-      viewport={{ amount: 0.5 }}
-              className={`transition-all duration-700 ease-in-out rounded-xl px-6 py-5 text-center text-lg font-semibold text-white backdrop-blur-md border border-cyan-400/20 ${baseStyle} ${extraStyle}`}>
-       <div className="flex flex-col items-center justify-center gap-2">
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.7 }}
+              animate={animatedItems[i] ? { opacity: 1, scale: 1 } : undefined}
+              whileInView={{ opacity: 1, scale: 1 }}
+              onViewportEnter={() =>
+                setAnimatedItems((prev) => ({ ...prev, [i]: true }))
+              }
+              transition={{ type: "spring", stiffness: 80, damping: 15 }}
+              viewport={{ amount: 0.5 }}
+              className={`transition-all duration-700 ease-in-out rounded-xl px-6 py-5 text-center text-lg font-semibold text-gray-800 dark:text-white backdrop-blur-md border border-cyan-400/20 ${baseStyle} ${extraStyle}`}>
+              <div className="flex flex-col items-center justify-center gap-2">
                 {typeof skill.icon === "string" && skill.icon !== "" ? (
-       <i className={`${skill.icon} text-4xl text-cyan-300`}></i>
-     ) : typeof skill.icon === "object" && skill.icon.type === "img" ? (
-<img  src={skill.icon.props.src} alt={skill.label} className="w-10 h-10 object-contain"/>
+                  <i className={`${skill.icon} text-4xl text-cyan-600 dark:text-cyan-300`}></i>
+                ) : typeof skill.icon === "object" &&
+                  skill.icon.type === "img" ? (
+                  <img src={skill.icon.props.src} alt={skill.label} className="w-10 h-10 object-contain"/>
                 ) : (
                   <span className="text-3xl">🧠</span>
                 )}
-                <span className="text-cyan-100 text-base">{skill.label}</span>
+                <span className="text-black dark:text-cyan-100 text-base">
+                  {skill.label}
+                </span>
               </div>
             </motion.div>
           );

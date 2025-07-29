@@ -13,7 +13,7 @@ const Home = () => {
   return (
 
     <>
-    <div className="overflow-x-hidden min-h-screen">
+   <div className="overflow-x-hidden min-h-screen space-y-0">
 
 
 
@@ -25,28 +25,26 @@ const Home = () => {
 
       </section>
 
-      <section id="about">
-        <About />
-      
-      </section>
+<section id="about" className="!my-0 !py-0">
+  <About />
+</section>
 
-      <section id="Education">
-        <Education />
-      </section>
+<section id="Education" className="!my-0 !py-0">
+  <Education />
+</section>
 
-      <section id="Skills">
-        <Skills />
-      </section>
+<section id="Skills" className="!my-0 !py-0">
+  <Skills />
+</section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+<section id="projects" className="!my-0 !py-0">
+  <Projects />
+</section>
 
-      <section id="contact">
-        
-        <Contacts/>
+<section id="contact" className="!my-0 !py-0">
+  <Contacts />
+</section>
 
-      </section>
     </div>
     </>
   );
