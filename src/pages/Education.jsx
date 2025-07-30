@@ -48,7 +48,7 @@ return (
   ${isLeft ? "md:mr-auto md:pl-6" : "md:ml-auto md:pr-6"}`}>
 
   <div className="w-28 h-28 md:w-38 md:h-38 rounded-full overflow-hidden border border-white dark:border-white/40 bg-white/10 flex items-center justify-center">
-    <img src={item.logo} alt={`${item.institute} logo`} className="w-full h-full object-contain"/>
+    <img src={item.logo} alt={`${item.institute} logo`} className="w-full h-full object-contain"loading="lazy"/>
   </div>
 
   <div className="flex-1 text-center sm:text-left space-y-1 lg:space-y-2">

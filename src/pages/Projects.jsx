@@ -69,7 +69,7 @@ const Projects = () => {
             className="group relative overflow-hidden rounded-2xl shadow-[0_0_50px_rgba(0,255,255,0.08)] border border-cyan-300/20 bg-white/5 backdrop-blur-lg mx-auto w-full transition-all duration-300"
             style={{ aspectRatio: "16 / 9", maxWidth: "100%" }}
           >
-            <img src={proj.image} alt={proj.title} className="w-full h-full object-cover" />
+            <img src={proj.image} alt={proj.title} className="w-full h-full object-cover" loading="lazy"/>
 
            <div className="absolute top-0 left-0 right-0 p-2 sm:p-4 flex justify-between items-start z-20 bg-gradient-to-b from-black/60 to-transparent pointer-events-none sm:font-medium">
               <div className="text-sm sm:text-2xl font-semibold rounded-xl text-white bg-black/70 px-2 py-1 ">

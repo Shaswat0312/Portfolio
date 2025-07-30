@@ -25,22 +25,22 @@ function SidebarIcons({ isMobile }) {
 
   return (
     <>
-      <a href="https://github.com/Shaswat0312" target="_blank" rel="noreferrer" title="GitHub">
+      <a href="https://github.com/Shaswat0312" target="_blank" rel="noreferrer" title="GitHub" aria-label="GitHub">
         <img src="/Github.avif" alt="GitHub" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank" rel="noreferrer" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn">
         <img src="/linkdin.avif" alt="LinkedIn" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="https://drive.google.com/file/d/1Ysp6atXxabgQBiIUj-wQM1etbANpc-vL/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume">
+      <a href="https://drive.google.com/file/d/1Ysp6atXxabgQBiIUj-wQM1etbANpc-vL/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume" aria-label="Resume">
         <img src="/resume.avif" alt="Resume" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="mailto:shaswat@example.com" target="_blank" rel="noreferrer" title="Email">
+      <a href="mailto:shaswat@example.com" target="_blank" rel="noreferrer" title="Email" aria-label="Email">
         <img src="/gmail.avif" alt="Email" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="https://x.com/Shaswat031204" target="_blank" rel="noreferrer" title="X">
+      <a href="https://x.com/Shaswat031204" target="_blank" rel="noreferrer" title="X" aria-label="X">
         <img src="/X.avif" alt="X" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="https://www.instagram.com/smisho_03/" target="_blank" rel="noreferrer" title="Instagram">
+      <a href="https://www.instagram.com/smisho_03/" target="_blank" rel="noreferrer" title="Instagram" aria-label="Instagram">
         <img src="/instagram.avif" alt="Instagram" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
     </>

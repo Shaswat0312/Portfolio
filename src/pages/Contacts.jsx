@@ -24,13 +24,13 @@ const Contacts = () => {
           </p>
 
           <div className="flex gap-6 justify-center lg:justify-start mb-8">
-            <a href="mailto:mishra3shaswat@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 dark:hover:text-yellow-400 transition" >
+            <a href="mailto:mishra3shaswat@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 dark:hover:text-yellow-400 transition" aria-label="Email">
               <FaEnvelope size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank"rel="noopener noreferrer"className="hover:text-blue-500 dark:hover:text-yellow-400 transition">
+            <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank"rel="noopener noreferrer"className="hover:text-blue-500 dark:hover:text-yellow-400 transition" aria-label="LinkedIn">
               <FaLinkedin size={28} />
             </a>
-            <a href="https://github.com/Shaswat0312" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 dark:hover:text-yellow-400 transition">
+            <a href="https://github.com/Shaswat0312" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 dark:hover:text-yellow-400 transition" aria-label="GitHub">
               <FaGithub size={28} />
             </a>
           </div>
