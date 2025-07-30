@@ -1,4 +1,3 @@
-import React from 'react'
 import About from "./About";
 import Contacts from "./Contacts";
 import Education from "./Education";

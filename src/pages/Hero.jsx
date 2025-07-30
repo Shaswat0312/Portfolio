@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -23,9 +22,9 @@ const Hero = () => {
             Hey, I'm Shaswat Mishra
           </motion.h1>
 
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="text-sm sm:text-base lg:text-lg text-neutral-800 dark:text-gray-400">
+          <p className="text-sm sm:text-base lg:text-lg text-neutral-800 dark:text-gray-400">
             A tech enthusiast crafting futuristic web experiences & exploring digital security realms.
-          </motion.p>
+          </p>
 
          <motion.div
   initial={{ opacity: 0, y: 20 }}
@@ -62,12 +61,13 @@ const Hero = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-          className="w-48 sm:w-64 md:w-72 lg:w-80 h-48 sm:h-64 md:h-72 lg:h-80 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-400 to-pink-500 shadow-xl overflow-hidden border-[5px] border-yellow-300 hover:rotate-1 hover:scale-105 transition-transform">
-          <img src="pic.avif" alt="Shaswat" className="w-full h-full object-cover" />
-        </motion.div>
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.4 }}
+  className="w-48 sm:w-64 md:w-72 lg:w-80 h-48 sm:h-64 md:h-72 lg:h-80 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-400 to-pink-500 shadow-xl overflow-hidden border-[5px] border-yellow-300 hover:rotate-1 hover:scale-105 transition-transform"
+>
+  <img src="pic.avif" alt="Shaswat" fetchpriority="high"className="w-full h-full object-cover"/>
+</motion.div>
       </div>
     </section>
   );

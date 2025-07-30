@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -13,7 +12,7 @@ const About = () => {
   transition={{ duration: 0.8 }}
   className="relative group w-[90%] max-w-[320px] h-[420px] mx-auto sm:mx-0 overflow-hidden rounded-xl border-2 border-yellow-500 shadow-lg flex-shrink-0 lg:mt-25"
 >
-  <img src="./profile.avif" alt="Shaswat Mishra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+  <img src="./profile.avif" alt="Shaswat Mishra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/50 pointer-events-none" />
   <div className="absolute bottom-0 left-0 w-full bg-black/70 text-yellow-400 text-center py-2 text-lg font-semibold">
     Shaswat Mishra
