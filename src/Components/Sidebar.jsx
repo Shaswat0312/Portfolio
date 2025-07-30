@@ -3,7 +3,7 @@ const Sidebar = () => {
     <>
       <aside className="hidden sm:flex fixed left-0 ml-6 top-1/2 -translate-y-1/2 h-[560px] w-20 rounded-3xl  bg-neutral-900/50 dark:bg-white/5 backdrop-blur-lg border border-neutral-500/30 dark:border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex-col items-center justify-between py-8 z-[100]">
         <div className="text-white text-2xl font-bold h-10 w-10 mb-7 -mt-5">
-          <img src="./Logo.jpg" alt="Logo" />
+          <img src="./Logo.avif" alt="Logo" />
         </div>
 
         <div className="flex flex-col gap-6 text-white text-xl items-center">
@@ -26,22 +26,22 @@ function SidebarIcons({ isMobile }) {
   return (
     <>
       <a href="https://github.com/Shaswat0312" target="_blank" rel="noreferrer" title="GitHub">
-        <img src="/Github.png" alt="GitHub" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/Github.avif" alt="GitHub" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank" rel="noreferrer" title="LinkedIn">
-        <img src="/linkdin.png" alt="LinkedIn" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/linkdin.avif" alt="LinkedIn" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="https://drive.google.com/file/d/1Ysp6atXxabgQBiIUj-wQM1etbANpc-vL/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume">
-        <img src="/resume.png" alt="Resume" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/resume.avif" alt="Resume" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="mailto:shaswat@example.com" target="_blank" rel="noreferrer" title="Email">
-        <img src="/gmail.png" alt="Email" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/gmail.avif" alt="Email" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="https://x.com/Shaswat031204" target="_blank" rel="noreferrer" title="X">
-        <img src="/X.png" alt="X" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/X.avif" alt="X" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="https://www.instagram.com/smisho_03/" target="_blank" rel="noreferrer" title="Instagram">
-        <img src="/instagram.png" alt="Instagram" className={`${iconStyle} hover:scale-110 transition-transform`} />
+        <img src="/instagram.avif" alt="Instagram" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
     </>
   );

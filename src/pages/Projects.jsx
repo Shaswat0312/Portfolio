@@ -6,7 +6,7 @@ const projects = [
   {
     title: "CyboPunk",
     description: "Gamified quiz Web-App making cybersecurity fun and visually immersive.",
-    image: "/proj1.png",
+    image: "/proj1.avif",
     tags: ["React", "Tailwind", "Context API"],
     liveLink: "https://cybopunk.vercel.app/",
     githubLink: "https://github.com/Shaswat0312/CYBOPUNK",
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "TempTrek",
     description: "TempTrek is a weather app fetching real-time data from OpenWeather API with clean UI.",
-    image: "/TempTrek.png",
+    image: "/TempTrek.avif",
     tags: ["JavaScript", "OpenWeather API"],
     liveLink: "https://mini-projects-one-lyart.vercel.app/",
     githubLink: "https://github.com/Shaswat0312/Mini-Projects/tree/main/weather-app",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "LOLgorithm",
     description: "LOLgorithm is a Joke App using Joke API",
-    image: "/LOLgorithm.png",
+    image: "/LOLgorithm.avif",
     tags: ["JavaScript", "Official Joke API"],
     liveLink: "https://mini-projects-sw43.onrender.com/",
     githubLink: "https://github.com/Shaswat0312/Mini-Projects/tree/main/LOLgorithm",
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "TO-DO-APP",
     description: "TO-DO-APP with resposive and interactive UI",
-    image: "/TODO.png",
+    image: "/TODO.avif",
     tags: ["HTML5", "CSS3", "JAVASCRIPT"],
     liveLink: "https://wonderful-tarsier-c79011.netlify.app/",
     githubLink: "https://github.com/Shaswat0312/Mini-Projects/tree/main/TO-DO-LIST",

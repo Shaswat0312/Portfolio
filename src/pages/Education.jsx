@@ -8,7 +8,7 @@ const Education = () => {
       level: "B.Tech – Computer Science & Engineering",
       year: "2023–2027",
       marks: "Pursuing",
-      logo: "/iter.png",
+      logo: "/iter.avif",
       location: "Bhubaneswar, Odisha",
     },
     {
@@ -16,7 +16,7 @@ const Education = () => {
       level: "Senior Secondary (Class 12)",
       year: "2022",
       marks: "88%",
-      logo: "/mps.jpeg",
+      logo: "/mps.avif",
       location: "Bhubaneswar, Odisha",
     },
     {
@@ -24,7 +24,7 @@ const Education = () => {
       level: "Secondary (Class 10)",
       year: "2020",
       marks: "93%",
-      logo: "/sxhs.png",
+      logo: "/sxhs.avif",
       location: "Keonjhar, Odisha",
     },
   ];

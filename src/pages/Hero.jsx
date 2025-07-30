@@ -66,7 +66,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
           className="w-48 sm:w-64 md:w-72 lg:w-80 h-48 sm:h-64 md:h-72 lg:h-80 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-400 to-pink-500 shadow-xl overflow-hidden border-[5px] border-yellow-300 hover:rotate-1 hover:scale-105 transition-transform">
-          <img src="pic.png" alt="Shaswat" className="w-full h-full object-cover" />
+          <img src="pic.avif" alt="Shaswat" className="w-full h-full object-cover" />
         </motion.div>
       </div>
     </section>
