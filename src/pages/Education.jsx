@@ -11,7 +11,7 @@ const Education = () => {
     {
       institute: "Mother's Public School",
       level: "Senior Secondary (Class 12)",
-      year: "2022",
+      year: "",
       marks: "88%",
       logo: "/mps.avif",
       location: "Bhubaneswar, Odisha",
@@ -19,7 +19,7 @@ const Education = () => {
     {
       institute: "St. Xavier's High School",
       level: "Secondary (Class 10)",
-      year: "2020",
+      year: "",
       marks: "93%",
       logo: "/sxhs.avif",
       location: "Keonjhar, Odisha",
@@ -58,7 +58,7 @@ return (
     <p className="text-blue-700 dark:text-cyan-400 text-sm lg:text-lg font-medium text-center">
       {item.level}
     </p>
-    <p className="italic text-gray-700 dark:text-gray-300 text-sm lg:text-base text-center">{item.year}</p>
+    
     
   </div>
 </div>
