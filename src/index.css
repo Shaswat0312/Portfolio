@@ -41,7 +41,7 @@
     height: 18rem;
     top: 2.5rem;
     left: 2.5rem;
-    background: #ec4899; /* pink */
+    background: #ec4899;
     opacity: 0.2;
   }
 
@@ -50,7 +50,7 @@
     height: 20rem;
     bottom: 2.5rem;
     right: 2.5rem;
-    background: #22d3ee; /* cyan */
+    background: #22d3ee; 
     opacity: 0.2;
   }
 
@@ -61,7 +61,7 @@
     z-index: -10;
     border-radius: 9999px;
     filter: blur(90px);
-    opacity: 0.6; /* Increased for visibility */
+    opacity: 0.6; 
     pointer-events: none;
     transition: opacity 0.3s ease;
   }
@@ -71,7 +71,7 @@
     height: 15rem;
     top: 3rem;
     left: 3rem;
-    background: #ed0ace; /* stronger pink */
+    background: #ed0ace; 
   }
 
   html:not(.dark) body::after {
@@ -79,8 +79,7 @@
     height: 15rem;
     bottom: 3rem;
     right: 5rem;
-    background: #f97316; /* stronger orange */
-  }
+    background: #f97316; 
 
   .navbar-bg::before {
     content: "";
