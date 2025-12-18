@@ -64,7 +64,7 @@ const About = () => {
   Want to dive deeper into my journey? Tap below to check out my resume 👇
   </p>
 
-    <motion.a href="https://drive.google.com/file/d/1Ysp6atXxabgQBiIUj-wQM1etbANpc-vL/view?usp=sharing" target="_blank" rel="noopener noreferrer"  whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
+    <motion.a href="https://drive.google.com/file/d/1LwJMDPALu9jJTpq24XbSJ5L-7OmTGloY/view?usp=sharing" target="_blank" rel="noopener noreferrer"  whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
   className="block mx-auto mt-6 max-w-[220px] px-8 py-3 rounded-full bg-black text-white border border-white font-semibold shadow-md hover:bg-neutral-700/90 hover:shadow-yellow-500/50 hover:text-white hover:border-black transition-colors duration-300 text-center" aria-label="Resume">
   📄 Resume
       </motion.a>

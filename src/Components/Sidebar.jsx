@@ -31,7 +31,7 @@ function SidebarIcons({ isMobile }) {
       <a href="https://www.linkedin.com/in/shaswatmishra3" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn">
         <img src="/linkdin.avif" alt="LinkedIn" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
-      <a href="https://drive.google.com/file/d/1Ysp6atXxabgQBiIUj-wQM1etbANpc-vL/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume" aria-label="Resume">
+      <a href="https://drive.google.com/file/d/1LwJMDPALu9jJTpq24XbSJ5L-7OmTGloY/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume" aria-label="Resume">
         <img src="/resume.avif" alt="Resume" className={`${iconStyle} hover:scale-110 transition-transform`} />
       </a>
       <a href="mailto:shaswat@example.com" target="_blank" rel="noreferrer" title="Email" aria-label="Email">
