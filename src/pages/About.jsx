@@ -58,12 +58,6 @@ const About = () => {
             <p className="text-l font-bold italic"><span>📍</span> Bhubaneswar, Odisha</p>
             <p className="font-bold italic"><span className="text-blue-800 font-bold dark:text-yellow-300">🗣️ Languages:</span> English, Hindi, Odia</p>
             <p className="font-bold italic"><span className="text-blue-800  dark:text-yellow-300 font-bold">🔥 Hobby:</span> Travelling, Reading, Creating Memes</p>
-            <p className="flex flex-wrap items-center gap-2 text-sm sm:text-base md:text-xl italic text-red-500 text-center sm:text-left">
-              btw don't forget to follow My Meme Page{" "}
-              <a href="https://www.instagram.com/thanda.memee/" target="_blank" rel="noreferrer" className="inline-block">
-                <img src="./instagram.avif" alt="Meme" className="w-6 h-6 sm:w-8 sm:h-8" />
-              </a>
-            </p>
           </div>
 
   <p className="mt-4 text-sm italic opacity-70">
